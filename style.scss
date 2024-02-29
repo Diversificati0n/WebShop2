@@ -31,12 +31,23 @@ a {
     background-color: $backBlock;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-.header__left {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 41px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 41px;
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
 }
 
 .top-head__heading {
@@ -58,7 +69,6 @@ a {
 
 .slider__img {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
 
